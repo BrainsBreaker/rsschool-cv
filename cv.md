@@ -4,15 +4,15 @@
 
 *discord*: BrainsBreaker(@BrainsBreaker)
 
-===
+---
 
 Hi, I am starting to learn programming frontend basics
 
-===
+***
 
 I have a bit experience in C and C++
 
-===
+----
 
 Traning in C++:
 ```
@@ -73,10 +73,10 @@ int main()
 ```
 I have no working experience
 
-===
+****
 
 I learned C at school. I learned basics in other languages by myself
 
-===
+-----
 
 I learned english at school. My english level is A2/B1. I need more practices
