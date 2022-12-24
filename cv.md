@@ -65,7 +65,6 @@ int main()
 	return 0;
 }
 ```
-****
 I have no working experience
 ****
 I learned C at school. I learned basics in other languages by myself
