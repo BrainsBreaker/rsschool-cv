@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://rs.school/favicon.ico">
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">          
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>          
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#work-experience" class="nav-link">Work experience</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <img class="avatar-img" src="./assets/img/gigach.png" alt="avatar">
+            <section class="section" id="profile">
+                <h1 class="section-title">Oleg Kachurin</h1>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts:</h2>
+                <ul class="section-list"></ul>
+                <li class="section-item contacts-item"> 
+                    <b>emeil:</b> <a href="mailto:kopspb@gmail.com" title="email">kopspb@gmail.com</a>
+                </li>
+                <li class="section-item contacts-item">
+                    <b>discord:</b> <a href="https://discordapp.com/users/335115961000525837" title="email">BrainsBreaker(@BrainsBreaker)</a>
+                </li>
+                <li class="section-item contacts-item">
+                    <b>github:</b> <a href="https://github.com/BrainsBreaker" title="email">BrainsBreaker</a>
+                </li>
+            </section>
+            <section class="section" id="summary">
+               <h2 class="section-title">Summary:</h2>
+                <p>Hi, I am starting to learn programming frontend basics</p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills:</h2>
+                <p>I have a bit experience in C and C++</p>
+            </section>
+            <section class="section" id="code">
+            <h2 class="section-title">Code:</h2>
+            <code class="code-example"> 
+                #include &lt;iostream&gt;<Br>
+                using namespace std;<Br>
+                int main (){<Br>
+                    &emsp;cout &lt;&lt; "Hellow world! &lt;&lt; endl";<Br>
+                return 0;}
+            </code>
+            </section>
+            <section class="section" id="work-experience">
+                <h2 class="section-title">Work-experience:</h2>
+                <p class="work-expirence">I do not have work experience</p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education:</h2>
+                <p class="work-expirence">I learned C at school. I learned basics in other languages by myself</p>
+            </section>
+            <section class="section" id="english">
+                <h2 class="section-title">English:</h2>
+                <p class="English">I learned english at school. My english level is A2/B1. I need more practices</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            © 2022 <a href="https://github.com/BrainsBreaker" class="github link">BrainsBreaker</a>
+            <a href="https://rs.school/js/" class="rss-link">RS School</a>
+        </div>
+    </footer>
 </body>
 </html>
