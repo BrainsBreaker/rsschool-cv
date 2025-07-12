@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<title>Page Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Oleg Kachurin</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<header>
+  <nav>
+  <ul class="navlist">
+    <li class="navelem"><a href="#contact-information">Contact information</a></li>
+    <li class="navelem"><a href="#about-me">About me</a></li>
+    <li class="navelem"><a href="#skills">Skills</a></li>
+    <li class="navelem"><a href="#code-example">Code example</a></li>
+    <li class="navelem"><a href="#expirance">Expirance</a></li>
+    <li class="navelem"><a href="#languages">Languages</a></li>
+  </ul>
+</nav>
+</header>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<main>
+  <h1>Oleg Kachurin</h1>
+  <img class="myphoto" src="./pepe.jpg" alt="pepe-the-frog">
+  <div id="contact-information">
+    <h3>Contact information</h3>
+    <p><b>Discord:</b> BrainsBreaker(@BrainsBreaker)</p>
+  </div>
+  <div id="about-me">
+    <h3>About me</h3>
+    <p>Nothing interesting</p>
+  </div>
+  <div id="skills">
+    <h3>Skills</h3>
+    <ul>
+        <li class="skillselem">C/C++</li>
+        <li class="skillselem">Python</li>
+    </ul>
+  </div>
+  <div id="code-example">
+    <h3>Code example</h3>
+    <pre>
+      <code>
+        import requests
+        import re
 
+        def find_link(A, B, k):
+            res = requests.get(A)
+            if res.status_code != 200:
+                return False
+            else:
+                for serch in re.finditer(r'&lt;a.*href=\"', res.text):
+                    C1 = ''
+                    i = serch.span()[1]
+                    while res.text[i] != '\"':
+                        C1 += res.text[i]
+                        i += 1
+                    B2 = B.replace('stepik.org', 'stepic.org')
+                    C2 = C1.replace('stepik.org', 'stepic.org')
+                    if C2 == B2 and k == 1:
+                        return True
+                    elif k&lt;1:
+                        if find_link(C1, B, k+1) or find_link(C2, B, k+1):
+                            return True
+
+            A = input()
+            B = input()
+            if find_link(A, B, 0):
+                print('Yes')
+            else:
+                print('No')
+      </code>
+    </pre>
+  </div>
+  <div class="expirance" id="expirance">
+    <h3>Expirance</h3>
+    <p>No expirance</p>
+  </div>
+  <div class="languages" id="languages">
+    <h3>Languages</h3>
+    <p><b>English:</b> A2</p>
+  </div>
+</main>
+
+<footer>`
+    <a id="myref" href="https://github.com/BrainsBreaker">BrainsBreaker</a>
+    <p id="year">2025</p>
+    <a id="courseref" href="https://rs.school/courses/javascript-ru"><img id="rsimg" src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/e51bf2b6998a853af2d592bcfe6bfbadb255d73f/tasks/cv/rs-school-logo.svg" alt = "rs-school-lol" width="100"></a>
+</footer>
 </body>
 </html>
