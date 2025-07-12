@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+header{
+  width: 100%;
+  background-color: rgb(52, 161, 169);
+}
+
+.navelem{
+  display: inline;
+  margin: 10px;
+}
+
+main{
+  background-color: rgb(193, 154, 103);
+}
+.myphoto{
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.skillselem{
+  list-style-type: none;
+}
+
+pre{
+  background-color: rgb(163, 168, 169);
+  font-family: monospace;  
+}
+
+
+footer{  
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 161, 169);
+}
+
+#year{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#myref{
+  position: absolute;
+  left: 1%;
+}
+
+#courseref{
+  position: absolute;
+  right: 1%;
+}
