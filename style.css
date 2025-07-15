@@ -13,7 +13,7 @@ body{
 
 header{
   width: 100%;
-  background-color: rgb(52, 161, 169);
+  background-color: rgba(52, 161, 169, 0.5);
 }
 
 .navelem{
@@ -22,8 +22,9 @@ header{
 }
 
 main{
-  background-color: rgb(193, 154, 103);
+  background-color: rgba(193, 154, 103, 0.5);
 }
+
 .myphoto{
     width: 20%;
     position: absolute;
@@ -31,12 +32,20 @@ main{
     right: 5%;
 }
 
+h1{
+  margin-left: 5px;
+}
+div{
+  margin-left: 5px;
+}
+
 .skillselem{
   list-style-type: none;
 }
 
 pre{
-  background-color: rgb(163, 168, 169);
+  margin-left: -5px;
+  background-color: rgba(163, 168, 169, 0.5);
   font-family: monospace;  
 }
 
@@ -48,7 +57,7 @@ footer{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgb(52, 161, 169);
+  background-color: rgba(52, 161, 169, 0.5);
 }
 
 #year{
